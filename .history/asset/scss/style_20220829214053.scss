@@ -1,0 +1,219 @@
+// variables
+$primary-color:#e88011;
+$letter-color:#717171;
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    
+}
+ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+li {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: 0;
+}
+
+body{
+    background-color:white;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.container{
+    max-width:1170px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+// Header Section
+.header{
+    display:flex;
+    justify-content:space-between;
+    height: 50px;
+    h1{
+        color
+    }
+    &-menu{
+        display:flex;
+        align-items:center;
+        font-family: roboto, helvetica, sans-serif;
+        li{
+            margin-right: 20px;
+            a{
+                color:#444;
+            }
+        }
+    }
+
+}
+
+// Banner Sections
+.banner{
+    position: relative;
+    &-title{
+        position: absolute;
+        left:0;
+
+        .logo{
+            img{
+                width:100%;
+            }
+        }
+        h1{
+            font-family: roboto, helvetica, sans-serif;
+            font-size: 110px;
+            font-weight: bold;
+            color:red;
+            span{
+                color:black;
+            }
+        }
+        h5{
+            margin-top: 10px;
+            font-weight: lighter;
+            color:#333;
+            font-size: 30px;
+
+        }
+        button{
+            margin:10px 0 0 0px;
+            width:300px;
+            height: 50px;
+            background-color:#BB0000;
+            color:white;
+            border:none;
+            border-radius:40px;
+        }
+    }
+
+    &-image{
+        display:flex;
+        justify-content:flex-end;
+        img{
+            width:70%;
+        }
+    }
+
+}
+.banner-bottom{
+    width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-left: 1440px solid $primary-color;
+	border-bottom: 0px solid transparent;
+}
+// Menu Section
+.Menu{
+    background-color:#ccc;
+    height: 50px;
+
+    .menu{
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+// content section
+.content{
+    background-color:$primary-color;
+}
+.content-wrapper{
+    display: flex;
+    justify-content:space-between;
+    min-height: 600px;
+    &-left{
+        margin-top:50px;
+        max-width:260px;
+        h1{
+            color:#ffff;
+            font-size:50px;
+            font-weight: 700;
+        }
+        &-grade{
+            margin-top:10px;
+            height:40px;
+            background-color:#fff;
+            text-align:center;
+            line-height: 40px;
+            border-radius:10px;
+            span{
+                font-size: 20px;
+            }
+            i{
+                margin-left: 30px;
+                font-size: 30px;
+            }
+        }
+    }
+    &-center{
+        margin-top:50px;
+        max-width:260px;
+        video{
+            width:100%;
+        }
+    }
+    &-right{
+        margin-top:50px;
+        max-width:260px;
+        &-content{
+            display:flex;
+            align-items:center;
+            padding-left: 10px;
+            width:247px;
+            height:60px; 
+            margin-top: 25px;
+            background-color:#fff;
+            border-radius:20px;
+        }
+        &-button{
+            width:150px;
+            height:40px;
+            background-color:#BB0000;
+            text-align:center;
+            line-height: 40px;
+            color:#fff;
+            font-size:20px;
+            border-radius:20px;
+            margin:25px auto;
+        }
+    }
+}
+
+.contact{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-field{
+        margin-top:10px;
+        min-height: 35px;
+        min-width: 500px;
+
+    }
+}
+.footer{
+    min-height:300px;
+    background-color:#ccc;
+}
